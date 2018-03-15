@@ -1,0 +1,8 @@
+{
+  "name": "hello-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lewenweijia/hello-react.git",
+  "author": "lewenweijia <lewenweijia@gmail.com>",
+  "license": "MIT"
+}
