@@ -1,3 +1,4 @@
+[[[[https://facebook.github.io/jest/img/jest-badge.svg][jest]]][https://github.com/facebook/jest]]
 - The React Blazing upupup
 - Process
   : (x) create-react-app
@@ -88,6 +89,7 @@
 
 - webpack
   : yarn add -D babel-core babel-preset-env babel-preset-react babel-loader webpack
+  : The output directory is required as *absolute path* 
 
 * Reference
   [[https://www.smashingmagazine.com/2014/06/building-with-gulp/][How To Build And Develop Websites With Gulp]]
