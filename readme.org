@@ -44,4 +44,44 @@
 - install bundler
   : yarn add browserify
   : "scripts": "babel src -d lib | broserify"
+- how browserify work  
+  : 1. module map
+  #+BEGIN_SRC js
+    {
+      1: [function (require, module, exports) {
+        module.exports = 'DEP';
+
+      }, {}],
+      2: [function (require, module, exports) {
+        require('./dep');
+
+        module.exports = 'ENTRY';
+
+      }, {"./dep": 1}]
+    }  mpa
+  #+END_SRC
+
+- intro task runner or build tools
+  : Once you're comfortable with Browserify, you'll probably want to integrate it with your favorite build tool. 
+  : gulp | grunt | make
+  : github.com/guilpjs/vinyl <== virutal file format
+  : Vinyl is a very simple metadata object 
+  : gulp works using vinyl stream
+  : Because browserify.bundle() return a text stream where as gulp works using vinyl stream. In order to browserify to work with other plugins you need to use vinyl-source-stream.
+
+- write gulpfiles in es6?
+  : yarn add -D babel-core babel-presst-env
+  : emacs gulp.babel.js
+
+- gulp upupup
+  : yarn remove babel-
+  : yarn add -D @babel/core @babel/preset-env @babel-preset-react
+  : yarn add -D browserify
+  : yarn add -D gulp
+  : json hints  -> 1. double quote enfore "" 2. (x) {"helo": 10,} trailing comma
   
+
+
+* Reference
+  [[https://www.smashingmagazine.com/2014/06/building-with-gulp/][How To Build And Develop Websites With Gulp]]
+  [[http://blog.revathskumar.com/2016/02/browserify-with-gulp.html][Browserify with gulp]]
