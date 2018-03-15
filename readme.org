@@ -71,17 +71,25 @@
 
 - write gulpfiles in es6?
   : yarn add -D babel-core babel-presst-env
-  : emacs gulp.babel.js
+  : emacs gulpfile.babel.js
 
 - gulp upupup
   : yarn remove babel-
   : yarn add -D @babel/core @babel/preset-env @babel-preset-react
   : yarn add -D browserify
   : yarn add -D gulp
+  : yarn add -D gulp-babel  ;; (x) gulp-browserify <== directly transform via gulp vinyl stream
   : json hints  -> 1. double quote enfore "" 2. (x) {"helo": 10,} trailing comma
-  
+  : src|dist src|lib
 
+============================================
+= Move to webpack
+============================================
+
+- webpack
+  : yarn add -D babel-core babel-preset-env babel-preset-react babel-loader webpack
 
 * Reference
   [[https://www.smashingmagazine.com/2014/06/building-with-gulp/][How To Build And Develop Websites With Gulp]]
   [[http://blog.revathskumar.com/2016/02/browserify-with-gulp.html][Browserify with gulp]]
+  [[http://browserify.org/articles.html][Introductions / Browserify basics]]
