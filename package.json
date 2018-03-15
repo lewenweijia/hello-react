@@ -1,0 +1,19 @@
+{
+  "name": "hello-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lewenweijia <lewenweijia@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "scripts": {
+    "build": "babel src -d lib"
+  }
+}

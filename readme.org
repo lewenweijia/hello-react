@@ -1,0 +1,17 @@
+- The React Blazing upupup
+- Process
+  : (x) create-react-app
+  : all configure project manually
+- A modern build pipeline typically consists of:
+  : A package manager => yarn | npm <- to take use of third party packages
+  : A bundler => webpack | browserify <- wirte modular code 
+  :                                   <- build them into together
+  :                                   <- optimize load time
+  : A compiler => modern js
+  *for me*  => yarn + webpack + babel
+* project setup
+  : yarn add react react-dom => main dependencies
+  : yarn add -D babel-cli babel-preset-react babel-preset-env <= compiler & compile plugins(esnext + jsx)
+  :             <-  .babelrc => "presets": ["env", "react"]
+  :             <-  package.config => "scripts": "babel src -d lib"
+  
